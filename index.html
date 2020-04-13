@@ -7,22 +7,24 @@
             padding: 0;
         }
         #header {
-            width: 100%;
-            min-height:500px;
-            text-align:center;
-            display:table; /*acts like a table*/
+            padding: 150px ;
             background:  linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(photo-1499951360447-b19be8fe80f5.png);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center bottom;
+        }   
+        #profil {
+            max-width: 320px;
+            min-width: 250px;
+            height: 320px;
+            background: linear-gradient(rgb(3, 151, 30),rgba(0, 0, 0));
+            margin: 0 auto;
         }
         h1 {
             font-size: 50px;
             font-weight: normal;
-            margin:0;
-            padding:0;
-            vertical-align:middle; /*middle centred*/
-            display:table-cell; /*acts like a table cell*/
+            margin: 0;
+            padding: 0;
             color: white;
         }
         h2 {
@@ -38,14 +40,16 @@
 <html lang="en">
     <body>
         <div id="header">
-            <h1>My Portofolio</h1>
+            <div id="profil">
+                <h1>Portofolio</h1>
+            </div>
         </div>
 
         <div id="myModal">Welcome</div>
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             alert(document.getElementById('myModal').innerHTML);
-        </script>
+        </script> -->
 
 
 
