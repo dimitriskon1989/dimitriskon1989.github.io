@@ -27,6 +27,9 @@
             color: black;
             font-size: 26px;
         }
+        #myModal {
+            visibility: hidden;    
+        }
     </style>
 
 </head> 
@@ -36,9 +39,13 @@
             <h1>My Portofolio</h1>
         </div>
 
+        <div id="myModal">Welcome</div>
+
         <script type="text/javascript">
-            alert("Welcome to my Page");
+            alert(document.getElementById('myModal').innerHTML);
         </script>
+
+
 
     </body>
 </html>
