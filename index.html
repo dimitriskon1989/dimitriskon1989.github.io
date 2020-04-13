@@ -15,6 +15,7 @@
         html, body {
             margin: 0;
             padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }        
         #header {
             
@@ -82,6 +83,53 @@
         #myModal {
             visibility: hidden;    
         }
+
+        #jumbotron-about {
+            margin: 0;
+            padding: 80px 0px 40px 0px;
+            background-color:#fff; 
+        } 
+        #jumbotron-about h1 {
+            text-align: center;
+            color: #000;
+            margin: 30px 30px 100px 30px;
+        }
+        .decorated { 
+            text-align:center; 
+            border-bottom: 2px solid rgb(224, 224, 224); 
+            line-height:0.1em; 
+            margin:10px 0 20px; 
+        } 
+        .decorated > span { 
+            background:#fff; 
+            padding:0 25px; 
+        }
+
+        #jumbotron-about p{
+            color:#3a3a3a;
+        }
+        img.person_icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        img.target_icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .decorated { 
+            text-align:center; 
+            border-bottom: 2px solid rgb(224, 224, 224); 
+            line-height:0.1em; 
+            margin:10px 0 20px; 
+        } 
+        .decorated > span { 
+            background:#fff; 
+            padding:0 25px; 
+        }
     </style>
 
 </head> 
@@ -141,6 +189,32 @@
     </div>
 
     <div id="myModal">Welcome</div>
+
+    <!-- Start About Us div -->
+    <div class="jumbotron jumbotron-fluid " id="jumbotron-about">
+        <h1 class="decorated"><span>About Me</span></h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="person_icon" width="100px" src="images/about-us.png" alt="" title="Our Job">
+                        </div>
+                        <div class="col-12">                    
+                            <p> 
+                                We undertake to create an outstanding video with your
+                                highlights. Give us your football matches and we promise
+                                that you will be satisfied about the result.
+                            </p>  
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us div -->
 
     <!-- <script type="text/javascript">
         alert(document.getElementById('myModal').innerHTML);
