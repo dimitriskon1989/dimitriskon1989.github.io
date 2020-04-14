@@ -46,48 +46,54 @@
         }  
 
         #inner-container {
-            padding: 15% 10% 10% 10%;
+            margin: 0;
+            padding: 5%;
+            /* border: 1px solid #fff; */
         }
         #profil {
-            max-width: 250px;
-            min-width: 250px;
-            height: 280px;
+            max-width: 330px;
+            min-width: 330px;
+            height: 420px;
             margin: 0 auto;
             /* border: 1px solid rgb(26, 2, 116); */
             border-radius: 10px;
             background-color: rgba(20,20,20,0.8) ;
         }
         #profil-image {
-            padding-top: 10px;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            margin-top: -100px;
+            /* margin-top: -100px; */
             /* border: 1px solid #fff; */
+        }
+        #profil-image img {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            /* border:  1px solid #fff; */
         }
         #profil-info {
             /* border: 1px solid #fff; */
             text-align: center;
-            padding-top: 5px;
+        }
+        p {
+            color: rgb(92, 92, 92);
         }
         h1 {
             font-size: 50px;
-            font-weight: normal;
-            margin: 0;
-            padding: 0;
-            color: white;
         }
         h2 {
-            color: rgb(255, 255, 255); 
             font-size: 26px;
+            color: white;
+        }
+        h1,h2,h3,h4,h5,h6 {
             font-weight: normal;
             margin: 0;
             padding: 0;
         }
-        h6 {
-            padding-top: 5px;
+        #profil-info h6 {
+            padding-top: 10px;
             color: rgb(143, 143, 143);
-        }
-        #myModal {
-            visibility: hidden;    
         }
 
         #jumbotron-about {
@@ -95,47 +101,34 @@
             padding: 80px 0px 40px 0px;
             background-color:#fff; 
         } 
-        #jumbotron-about h1 {
-            text-align: center;
-            color: #000;
-            margin: 30px 30px 100px 30px;
-        }
+        
         .decorated { 
             text-align:center; 
+            border-top: 2px solid rgb(224, 224, 224); 
             border-bottom: 2px solid rgb(224, 224, 224); 
             line-height:0.1em; 
-            margin:10px 0 20px; 
+            margin: 30px 30px 100px 30px;
         } 
         .decorated > span { 
             background:#fff; 
-            padding:0 25px; 
+            padding:0 20px; 
+            color: black;
         }
 
-        #jumbotron-about p{
-            color:#3a3a3a;
+        #myModal {
+            visibility: hidden;    
         }
-        img.person_icon {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
+
+        @media screen and (max-width:575px) {
+            #personal-details  {
+                text-align: center;
+            }
+            #personal-info {
+                text-align: left;
+            }
         }
-        img.target_icon {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
-        .decorated { 
-            text-align:center; 
-            border-bottom: 2px solid rgb(224, 224, 224); 
-            line-height:0.1em; 
-            margin:10px 0 20px; 
-        } 
-        .decorated > span { 
-            background:#fff; 
-            padding:0 25px; 
-        }
+            
+        
     </style>
 
 </head> 
@@ -178,7 +171,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <h2>Dimitris Konstantinou</h2>
-                                        <h6>Web Designer & Development</h6>
+                                        <h6>Web Designer & Developer</h6>
                                     </div>
                                     <div class="col-12 mt-4">
                                         <div class="row">
@@ -196,24 +189,22 @@
         </div>
     </div>
 
-    <div id="myModal">Welcome</div> 
-
     <!-- Start About Us div -->
     <div class="jumbotron jumbotron-fluid " id="jumbotron-about">
         <h1 class="decorated"><span>About Me</span></h1>
         <div class="container-fluid">
             <div class="row">
                 <div class="hidden-xs hidden-sm col-md-1 col-lg-2 col-xl-2"></div>
-                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4">
-                    <h4>Personal Details</h4> <br>
-                    <p>
+                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 mb-4" id="personal-details">
+                    <h3>Personal Details</h3> <br>
+                    <p id="personal-info">
                         <span style="color: #27ad76; font-weight: bold;">Email</span> : dim.konstantinou1989@gmail.com <br>
                         <span style="color: #27ad76; font-weight: bold;">Phone</span> : 6954578452 <br>
                         <span style="color: #27ad76; font-weight: bold;">facebook</span> : Dimitris Konstantinou <br>
                     </p>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 text-center">                   
-                    <h4>Personal Info</h4> <br>
+                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 text-center mb-4">                   
+                    <h3>More About Me</h3> <br>
                     <p>
                         Hi! I am Dimitris Konstantinou, a web designer/developer focused on creating a great websites. 
                         Designing and Coding have been my passion since the days I started working with computers but 
@@ -227,9 +218,11 @@
     </div>
     <!-- End About Us div -->
 
+    <!-- <div id="myModal">Welcome</div> 
+
     <script type="text/javascript">
         alert(document.getElementById('myModal').innerHTML);
-    </script>
+    </script> -->
 
 
     <!-- Optional JavaScript -->
