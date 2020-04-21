@@ -111,22 +111,35 @@
         .decorated > span { 
             background:#fff; 
             padding:0 20px; 
-            color: black;
+            color: black;           
         }
 
         #myModal {
             visibility: hidden;    
         }
 
-        @media screen and (max-width:575px) {
-            #personal-details  {
-                text-align: center;
+        @media screen and (max-width:769px) {
+            .decorated { 
+                line-height:0.05em; 
+                margin: 30px 0px 100px 0px;
             }
-            #personal-info {
-                text-align: left;
+            .decorated > span { 
+                font-size: 44px; 
+                padding:0 15px;   
+            }
+            h3 {
+                font-size: 24px;
             }
         }
-            
+
+        @media screen and (max-width:575px) {
+            .decorated { 
+                line-height:0.01em; 
+            }
+            .decorated > span { 
+                font-size: 36px; 
+            }
+        }             
         
     </style>
 
@@ -189,21 +202,22 @@
     </div>
 
     <!-- Start About Us div -->
-    <div class="jumbotron jumbotron-fluid " id="jumbotron-about">
+    <div class="jumbotron jumbotron-fluid" id="jumbotron-about">
         <h1 class="decorated"><span>About Me</span></h1>
         <div class="container-fluid">
             <div class="row">
-                <div class="hidden-xs hidden-sm col-md-1 col-lg-2 col-xl-2"></div>
-                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 mb-4" id="personal-details">
-                    <h3>Personal Details</h3> <br>
-                    <p id="personal-info">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 mb-4" id="personal-details">
+                    <h3 class="text-center text-md-left">Personal Details</h3> <br>
+                    <p class="text-center text-sm-left" id="personal-info">
                         <span style="color: #27ad76; font-weight: bold;">Email</span> : dim.konstantinou1989@gmail.com <br>
+                        <span style="color: #27ad76; font-weight: bold;">Facebook</span> : Dimitris Konstantinou <br>
                         <span style="color: #27ad76; font-weight: bold;">Phone</span> : 6954578452 <br>
-                        <span style="color: #27ad76; font-weight: bold;">facebook</span> : Dimitris Konstantinou <br>
                     </p>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 mb-4">                   
-                    <h3 class="text-center">More About Me</h3> <br>
+                <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 mb-4">                   
+                    <h3 class="text-center">More About Me</h3> 
+                    <br>
                     <p class="text-justify">
                         Hi! I am Dimitris Konstantinou, a web designer/developer focused on creating a great websites. 
                         Designing and Coding have been my passion since the days I started working with computers but 
@@ -211,7 +225,7 @@
                         intuitive and functional websites.
                     </p>                       
                 </div> 
-                <div class="hidden-xs hidden-sm col-md-1 col-lg-2 col-xl-2"></div>
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
             </div>
         </div>
     </div>
