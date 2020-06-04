@@ -1,0 +1,131 @@
+#jumbotron-contact {
+    background: #fff;
+    z-index: 99;
+}
+#jumbotron-about h1 {
+    text-align: center;
+    color: #000;
+    margin: 30px 30px 100px 30px;
+}
+#container-contact h2 {
+    padding-bottom: 3%;
+}
+.decorated { 
+    text-align:center; 
+    border-bottom: 2px solid rgb(224, 224, 224); 
+    line-height:0.1em; 
+    margin:10px 0 20px; 
+} 
+.decorated > span { 
+    background:#fff; 
+    padding:0 25px; 
+}
+
+#jumbotron-contact #container-contact{
+    padding: 5%;
+    color: rgb(0, 0, 0);
+    background-color: #e2e2e2;
+}
+#email-icon {
+    display: block;
+}
+#frame {
+    position: absolute; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+}
+.form-group {
+    margin-top: 3%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#form {
+    margin: 1% 10% 10% 10%;
+}
+.form-group input {
+    border: 0;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 0.6);
+    padding: 25px 25px 25px 20px;
+    font-size: 14px;
+}
+.form-group input:focus {
+    background:rgba(255, 255, 255, 0.6);
+}
+.form-group textarea {
+    border: 0;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 0.6);
+    padding-left: 25px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.form-group textarea:focus {
+    background:rgba(255, 255, 255, 0.6);
+}
+#btn-send {
+    font-size: 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 10px 50px 10px 50px;
+    border: 0;
+    border-radius: 20px;
+    background:#34495e;
+}
+#btn-send:hover {
+    background:#069;
+}
+
+#follow-us #social-btn {
+    margin-top: 10%;
+}
+#follow-us #social-btn img{
+    width: 50px;
+}
+
+/* Start media screen resize */
+
+@media screen and (max-width:992px) {
+    #container-contact h2 {
+        font-size: 28px;
+    }
+    .form-group input {
+        padding: 25px 25px 25px 20px;
+    }
+    .form-group textarea {
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    #email-icon {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    #container-contact h2 {
+        font-size: 26px;
+    }
+    .form-group input {
+        padding: 20px 20px 20px 15px;
+        font-size: 14px;
+    }
+    .form-group textarea {
+        padding-left: 15px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:575px) {
+    #container-contact h2 {
+        font-size: 24px;
+    }
+    .form-group input {
+        font-size: 13px;
+    }
+    .form-group textarea {
+        font-size: 13px;
+    }
+    #btn-send {
+        padding: 10px 30px 10px 30px;
+        font-size: 13px;
+    }
+
+}
